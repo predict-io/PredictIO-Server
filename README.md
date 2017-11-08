@@ -33,6 +33,7 @@ This solution can be useful if you already are capturing visit or location infor
 | `advertising_id`   | Advertising ID if available on the the device. An empty or zeroed will be assumed to be an opt out from advertising. | `null` or `String` – e.g. ` FDD3186B-637D-48C8-A388-B86997D44415` |
 | `app_id`           | Identifier of the app which generated the visit event. | `null` or `String` – e.g. `io.predict.ios.app` |
 | `device_vendor`    | Name of the device manufacturer.         | `null` or `String` – e.g. `Apple`, `Samsung`, etc. |
+| `device_model`     | Model of the device.                     | `null` or `String` – e.g. `iPhone X`, `Galaxy S8` |
 | `platform_version` | OS version of the device platform.       | `null` or `String` – e.g. `11.1`, `7.0.1`, `8.0` |
 
 ### Visit Data
