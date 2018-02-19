@@ -16,7 +16,7 @@ This solution can be useful if you already are capturing visit or location infor
     "advertising_id": "FDD3186B-637D-48C8-A388-B86997D44415",
     "app_id": "io.predict.waypoints.snapshot",
     "app_version": "1.2.16",
-    "app_build": "200"
+    "app_build": "200",
     "device_vendor": "Apple",
     "device_model": "iPhone10,6",
     "platform_version": "11.1",
