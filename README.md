@@ -15,6 +15,8 @@ This solution can be useful if you already are capturing visit or location infor
   "device_data": {
     "advertising_id": "FDD3186B-637D-48C8-A388-B86997D44415",
     "app_id": "io.predict.waypoints.snapshot",
+    "app_version": "1.2.16",
+    "app_build": "200"
     "device_vendor": "Apple",
     "device_model": "iPhone10,6",
     "platform_version": "11.1",
@@ -37,6 +39,8 @@ This solution can be useful if you already are capturing visit or location infor
 | ------------------ | ---------------------------------------- | ---------------------------------------- |
 | `advertising_id`   | Advertising ID if available on the the device. An empty or zeroed will be assumed to be an opt out from advertising. | `String` – e.g. ` FDD3186B-637D-48C8-A388-B86997D44415` and not `00000000-0000-0000-0000-000000000000` |
 | `app_id`           | Identifier of the app which generated the visit event. | `String` – e.g. `io.predict.ios.app` |
+| `app_version` | Version of the app.       | `String` – e.g. `1.0.0`, `7.0.1`, `8.0` |
+| `app_build` | Build number of the app.       | `String` – e.g. `200`, `2018-02-10` |
 | `device_vendor`    | Name of the device manufacturer.         | `String` – e.g. `Apple`, `Samsung`, etc. |
 | `device_model`     | Model of the device.                     | `String` – e.g. `iPhone X`, `Galaxy S8` |
 | `platform_version` | OS version of the device platform.       | `String` – e.g. `11.1`, `7.0.1`, `8.0` |
