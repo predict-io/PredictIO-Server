@@ -36,19 +36,19 @@ This solution can be useful if you already are capturing visit or location infor
 | Key                | Description                              | Accepted Values                          |
 | ------------------ | ---------------------------------------- | ---------------------------------------- |
 | `advertising_id`   | Advertising ID if available on the the device. An empty or zeroed will be assumed to be an opt out from advertising. | `null` or `String` – e.g. ` FDD3186B-637D-48C8-A388-B86997D44415` |
-| `app_id`           | Identifier of the app which generated the visit event. | `null` or `String` – e.g. `io.predict.ios.app` |
-| `device_vendor`    | Name of the device manufacturer.         | `null` or `String` – e.g. `Apple`, `Samsung`, etc. |
-| `device_model`     | Model of the device.                     | `null` or `String` – e.g. `iPhone X`, `Galaxy S8` |
-| `platform_version` | OS version of the device platform.       | `null` or `String` – e.g. `11.1`, `7.0.1`, `8.0` |
-| `locale`           | User's device locale.                    | `null` or `String` – e.g. `de_DE`, `en_US`, etc. |
+| `app_id`           | Identifier of the app which generated the visit event. | `String` – e.g. `io.predict.ios.app` |
+| `device_vendor`    | Name of the device manufacturer.         | `String` – e.g. `Apple`, `Samsung`, etc. |
+| `device_model`     | Model of the device.                     | `String` – e.g. `iPhone X`, `Galaxy S8` |
+| `platform_version` | OS version of the device platform.       | `String` – e.g. `11.1`, `7.0.1`, `8.0` |
+| `locale`           | User's device locale.                    | `String` – e.g. `de_DE`, `en_US`, etc. |
 
 ### Visit Data
 
 | Key                   | Description                              | Accepted Values                          |
 | --------------------- | ---------------------------------------- | ---------------------------------------- |
-| `arrived_at`          | ISO8601 formatted timestamp of when the device arrived. | `null` or `ISO8601 String` – e.g. ` 2017-11-08T14:48:31.099Z` |
-| `departed_at`         | ISO8601 formatted timestamp of when the device departed. | `null` or `ISO8601 String` – e.g. ` 2017-11-08T14:48:31.099Z` |
-| `horizontal_accuracy` | Horizontal accuracy of the event.        | `null` or `Double` – e.g. `12.75`        |
+| `arrived_at`          | ISO8601 formatted timestamp of when the device arrived. | `ISO8601 String` – e.g. ` 2017-11-08T14:48:31.099Z` |
+| `departed_at`         | ISO8601 formatted timestamp of when the device departed. | `ISO8601 String` – e.g. ` 2017-11-08T14:48:31.099Z` |
+| `horizontal_accuracy` | Horizontal accuracy of the event.        | `Double` – e.g. `12.75`        |
 | `latitude`            | Latitude of the visit location.          | `Double` – e.g. ` 52.5317`               |
 | `longitude`           | Longitude of the visit location.         | `Double` – e.g. ` 13.3884`               |
 
