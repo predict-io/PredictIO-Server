@@ -12,24 +12,62 @@ This solution can be useful if you already are capturing visit or location infor
 
 ```json
 {
-  "device_data": {
-    "advertising_id": "FDD3186B-637D-48C8-A388-B86997D44415",
-    "app_id": "io.predict.waypoints.snapshot",
-    "app_version": "1.2.16",
-    "app_build": "200",
-    "device_vendor": "Apple",
-    "device_model": "iPhone10,6",
-    "platform_version": "11.1",
-    "locale": "de_DE"
-  },
-  "visit": {
-    "arrived_at": "2017-11-08T14:48:31.099Z",
-    "departed_at": "2017-11-08T14:48:31.099Z",
-    "horizontal_accuracy": 5,
-    "vertical_accuracy": 5,
-    "latitude": 52.531702000000003,
-    "longitude": 13.388479999999999
-  }
+    "visits": [
+        {
+            "arrived_at": "2017-11-08T14:48:31.099Z",
+            "departed_at": "2017-11-08T14:48:31.099Z",
+            "horizontal_accuracy": 5,
+            "vertical_accuracy": 5,
+            "latitude": 52.531702000000003,
+            "longitude": 13.388479999999999,
+            "device_data": {
+                "advertising_id": "FDD3186B-637D-48C8-A388-B86997D44415",
+                "app_id": "io.predict.waypoints.snapshot",
+                "app_version": "1.2.16",
+                "app_build": "200",
+                "device_vendor": "Apple",
+                "device_model": "iPhone10,6",
+                "platform_version": "11.1",
+                "locale": "de_DE"
+            }
+        },
+        {
+            "arrived_at": "2017-11-08T15:48:31.099Z",
+            "departed_at": "2017-11-08T15:48:31.099Z",
+            "horizontal_accuracy": 4,
+            "vertical_accuracy": 4,
+            "latitude": 53.531702000000003,
+            "longitude": 14.388479999999999,
+            "device_data": {
+                "advertising_id": "FDD3186B-637D-48C8-A388-B86997D44415",
+                "app_id": "io.predict.waypoints.snapshot",
+                "app_version": "1.2.16",
+                "app_build": "200",
+                "device_vendor": "Apple",
+                "device_model": "iPhone10,6",
+                "platform_version": "11.1",
+                "locale": "de_DE"
+            }
+        },
+        {
+            "arrived_at": "2017-11-08T16:48:31.099Z",
+            "departed_at": "2017-11-08T16:48:31.099Z",
+            "horizontal_accuracy": 5,
+            "vertical_accuracy": 5,
+            "latitude": 52.941702000000003,
+            "longitude": 13.168479999999999,
+            "device_data": {
+                "advertising_id": "FDD3186B-637D-48C8-A388-B86997D44415",
+                "app_id": "io.predict.waypoints.snapshot",
+                "app_version": "1.2.16",
+                "app_build": "200",
+                "device_vendor": "Apple",
+                "device_model": "iPhone10,6",
+                "platform_version": "11.1",
+                "locale": "de_DE"
+            }
+        }
+    ]
 }
 ```
 
@@ -57,6 +95,32 @@ This solution can be useful if you already are capturing visit or location infor
 | `longitude`           | Longitude of the visit location.         | `Double` – e.g. ` 13.3884`               |
 
 ------
+
+## Authentication
+
+1. Register for a [predict.io API key](http://www.predict.io/service/registration/?level=1)
+1. Set `Authorization` header to `Token token=<YOUR API KEY>`
+1. Test sending data to your sandbox account (check response codes)
+
+## Sending Data
+
+Data should be sent to **`https://api.parktag.mobi/v4/visits`** and follow the structure defined in the [example JSON](#example-json)
+
+### Testing Sandbox
+
+You should receive (or be given) a sandbox API key for testing, you can check that your integration is receiving successful response codes and you can use our support to verify sandbox data we receive.
+
+### Response Codes
+
+Our API should only (deliberately) return these response codes, anything other than these may indicate a fault on our side and the request should be retried:
+
+* `200 / Success` – The request was successfully processed
+* `400 / Bad Request` - The request is malformed someway and can't be processed
+* `401 / Unauthorized` - Your API key is invalid
+
+## Support
+
+Visit our Help Center, open an Issue or send an email to support@predict.io.
 
 ## How to Collect Visit Data? (iOS Only)
 
