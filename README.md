@@ -13,62 +13,69 @@ This solution can be useful if you already are capturing visit or location infor
 ```json
 {
     "visits": [
-        {
-            "arrived_at": "2017-11-08T14:48:31.099Z",
-            "departed_at": "2017-11-08T14:48:31.099Z",
-            "horizontal_accuracy": 5,
-            "vertical_accuracy": 5,
-            "latitude": 52.531702000000003,
-            "longitude": 13.388479999999999,
-            "device_data": {
-                "advertising_id": "FDD3186B-637D-48C8-A388-B86997D44415",
-                "app_id": "io.predict.waypoints.snapshot",
-                "app_version": "1.2.16",
-                "app_build": "200",
-                "device_vendor": "Apple",
-                "device_model": "iPhone10,6",
-                "platform_version": "11.1",
-                "locale": "de_DE"
-            }
-        },
-        {
-            "arrived_at": "2017-11-08T15:48:31.099Z",
-            "departed_at": "2017-11-08T15:48:31.099Z",
-            "horizontal_accuracy": 4,
-            "vertical_accuracy": 4,
-            "latitude": 53.531702000000003,
-            "longitude": 14.388479999999999,
-            "device_data": {
-                "advertising_id": "FDD3186B-637D-48C8-A388-B86997D44415",
-                "app_id": "io.predict.waypoints.snapshot",
-                "app_version": "1.2.16",
-                "app_build": "200",
-                "device_vendor": "Apple",
-                "device_model": "iPhone10,6",
-                "platform_version": "11.1",
-                "locale": "de_DE"
-            }
-        },
-        {
-            "arrived_at": "2017-11-08T16:48:31.099Z",
-            "departed_at": "2017-11-08T16:48:31.099Z",
-            "horizontal_accuracy": 5,
-            "vertical_accuracy": 5,
-            "latitude": 52.941702000000003,
-            "longitude": 13.168479999999999,
-            "device_data": {
-                "advertising_id": "FDD3186B-637D-48C8-A388-B86997D44415",
-                "app_id": "io.predict.waypoints.snapshot",
-                "app_version": "1.2.16",
-                "app_build": "200",
-                "device_vendor": "Apple",
-                "device_model": "iPhone10,6",
-                "platform_version": "11.1",
-                "locale": "de_DE"
-            }
-        }
+  {
+    "device_data": {
+      "advertising_id": "FDD3186B-637D-48C8-A388-B86997D44415",
+      "app_id": "io.predict.waypoints.snapshot",
+      "app_version": "1.2.16",
+      "app_build": "200",
+      "device_vendor": "Apple",
+      "device_model": "iPhone10,6",
+      "platform_version": "11.1",
+      "locale": "de_DE"
+    },
+    "visit": {
+      "arrived_at": "2017-11-08T14:48:31.099Z",
+      "departed_at": "2017-11-08T14:48:31.099Z",
+      "horizontal_accuracy": 5,
+      "vertical_accuracy": 5,
+      "latitude": 52.531702000000003,
+      "longitude": 13.388479999999999
+    }
+  },
+  {
+    "device_data": {
+      "advertising_id": "FDD3186B-637D-48C8-A388-B86997D44415",
+      "app_id": "io.predict.waypoints.snapshot",
+      "app_version": "1.2.16",
+      "app_build": "200",
+      "device_vendor": "Apple",
+      "device_model": "iPhone10,6",
+      "platform_version": "11.1",
+      "locale": "de_DE"
+    },
+    "visit": {
+      "arrived_at": "2017-10-08T14:48:31.099Z",
+      "departed_at": "2017-10-08T14:48:31.099Z",
+      "horizontal_accuracy": 4,
+      "vertical_accuracy": 4,
+      "latitude": 51.531702000000003,
+      "longitude": 11.388479999999999
+    }
+  },
+  {
+    "device_data": {
+      "advertising_id": "FDD3186B-637D-48C8-A388-B86997D44415",
+      "app_id": "io.predict.waypoints.snapshot",
+      "app_version": "1.2.16",
+      "app_build": "200",
+      "device_vendor": "Apple",
+      "device_model": "iPhone10,6",
+      "platform_version": "11.1",
+      "locale": "de_DE"
+    },
+    "visit": {
+      "arrived_at": "2017-10-08T14:43:31.099Z",
+      "departed_at": "2017-10-08T14:43:31.099Z",
+      "horizontal_accuracy": 4,
+      "vertical_accuracy": 4,
+      "latitude": 51.551702000000003,
+      "longitude": 11.458479999999999
+    }
+  }
     ]
 }
+
 ```
 
 ### Device Data
